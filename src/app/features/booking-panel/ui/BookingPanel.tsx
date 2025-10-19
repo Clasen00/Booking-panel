@@ -1,7 +1,8 @@
 export const BookingPanel = () => {
   return (
     <div>
-      <div>Booking Component</div>
+      <h1>Мои билеты</h1>
+      Menu Content
     </div>
   );
 };
