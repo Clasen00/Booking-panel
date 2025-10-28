@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
+import styles from "./page.module.scss";
+import { AsideMenu } from "@/widgets/AsideMenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cinema booking panel",
+  title: "Movies booking panel",
   description: "Simple app to book a film",
 };
 
@@ -25,7 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <div className={styles.container}>
+          <AsideMenu />
+
+          <main className={styles.mainContent}>{children}</main>
+        </div>
       </body>
     </html>
   );

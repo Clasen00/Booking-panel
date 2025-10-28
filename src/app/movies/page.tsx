@@ -1,8 +1,12 @@
-import styles from "./page.module.scss";
+import classNames from "classnames";
+import styles from "./styles.module.scss";
 
-export default function Home() {
+export default function Page() {
   return (
-    <section id="movies">
+    <section
+      id="movies"
+      className={classNames(styles.contentSection, styles.active)}
+    >
       <h2 className={styles.secondaryTitle}>Сейчас в прокате</h2>
       <div className={styles.movieGrid}>
         <div className={styles.movieCard}>

@@ -1,0 +1,17 @@
+.btn {
+  padding: 6px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  margin-top: 20px;
+}
