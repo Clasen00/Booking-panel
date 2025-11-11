@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@stylistic/stylelint-config": "^3.0.1",
+    "@stylistic/stylelint-plugin": "^4.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -23,6 +25,7 @@
     "eslint-config-next": "15.5.6",
     "prettier": "3.6.2",
     "stylelint": "^16.25.0",
+    "stylelint-config-standard": "^39.0.1",
     "stylelint-prettier": "^5.0.3",
     "typescript": "^5"
   }
